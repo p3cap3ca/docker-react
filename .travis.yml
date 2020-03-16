@@ -6,5 +6,4 @@ before_install:
     - docker build -t p3ca/docker-react -f Dockerfile.dev .
 
 script:
-    - docker p3ca/docker-react npm run test -- --coverage
-    
+    - docker run p3ca/docker-react npm run test -- --coverage
